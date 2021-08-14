@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <title>Roi Calculator</title>
+    <link href="./roi-cal.css" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <!-- Average input  -->
+
+        <div>
+            <h1>ROI Calculator</h1>
+            <div class="avg-no"><label>Average number of documents processed
+                    daily</label>
+                <br>
+                <input type="number" id="Avg_no" value="" placeholder="0">
+            </div>
+
+
+
+
+            <!-- number of employee input -->
+            <br>
+            <div     class="no-employ"><label>Number of employees processing
+                     documents</label></div>
+                     <input type="number" id="Employ_no" value="" placeholder="0">
+            </div>   <br><br>
+
+
+
+                    <!-- time req in minutes input  -->
+
+            <div     class="time-req"><label>Time required to process one document
+                     (in minutes)</label></div>
+
+            <div> 
+                    <!-- automation slider input  -->
+                      <input type="number" id="Time_req" value="" placeholder="0">
+                      <p>Automation factor: <span id="demo"></span></p>
+                      <input style="transform: translateX(50%); left: 0%;" aria-valuemin="1" aria-valuemax="100" type="range" min="1"
+                      max="100" value="100" class="slider" id="myRange">
+             </div>
+
+             
+             
+             <div>
+                       <input type="submit" id="result" value="Submit" onclick="Numb_perEmp(event)">
+             </div>
+
+
+             </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="avg_result">
+
+
+            <div>
+                <div class="element-visibility">
+
+
+                    <div><label>Number of documents per employee per
+                            day</label></div>
+                    <span value="0" id="numb">0</span><hr>
+
+                </div>
+
+                </span><span>
+                    <div class="element-visibility"><label>Percentage of day spent processing
+                            documents (per employee)</label>
+                        <div>
+                            <span value="0.0" id="percentage_per_imployee">0.0</span>
+                            <span>%</span>
+                            <hr>
+                        
+                    </div>
+
+                <span data-ref="#12">
+                    <div id="ref-r12" class="element-visibility">
+                        <div class="calconic-element-label"><label>Time Saved automating your document
+                                process (per day)</label>
+                            <div>
+                                <p><span class="p-p-fix"></span><span class="result"> <span>0</span>
+                                    </span><span class="p-p-fix">Employee Hours</span></p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                </span><span data-ref="#13" class="element-visibility">
+                    <div id="ref-r13" class="calconic-element calconic-formula">
+                        <div><label>Time saved automating your document
+                                process (per year)</label>
+
+                            <p><span class="p-p-fix"></span><span class="result"> <span>0</span>
+                                </span><span class="p-p-fix">Employee Hours</span></p>
+                            <hr>
+                        </div>
+                    </div>
+
+
+                </span><span data-ref="#11" class="element-visibility">
+                    <div id="ref-r11">
+                        <div><label>Number of employees freed up to do
+                                more important tasks</label>
+                        </div>
+
+                        <p><span class="p-p-fix"></span><span class="result"> <span>0.0</span>
+                            </span><span class="p-p-fix">Employees</span></p>
+                        <hr>
+                    </div>
+
+            </div>
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./danil.js"></script>
+
+
+</html>
